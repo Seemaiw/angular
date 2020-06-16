@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-infinite-scrolling',
@@ -7,7 +7,7 @@ import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InfiniteScrollingComponent implements OnInit {
-  items = Array.from({length: 100000}).map((_, i) => `Item #${i}`);
+  @Input() items;
   constructor() { }
 
   ngOnInit(): void {

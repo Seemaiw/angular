@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { InfiniteScrollingComponent } from './practice/infinite-scrolling/infinite-scrolling.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from './practice/material/material.module';
+import { MainComponent } from './practice/main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InfiniteScrollingComponent
+    InfiniteScrollingComponent,
+    MainComponent
   ],
     imports: [
         BrowserModule,

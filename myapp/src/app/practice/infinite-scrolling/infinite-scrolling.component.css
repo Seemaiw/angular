@@ -1,9 +1,24 @@
 .viewport {
-  height: 200px;
-  width: 200px;
-  border: 1px solid black;
+  height: 300px;
+  width: 50%;
 }
 
 .item {
   height: 50px;
+}
+
+.animate__animated .animate__fadeInRight {
+  height: 50px;
+}
+
+.scroll-card {
+  padding-top: 2%;
+  padding-left: 35%;
+  height: 400px;
+  background-color: navajowhite;
+}
+
+mat-card{
+  background-color: darkgreen;
+  color: white;
 }
