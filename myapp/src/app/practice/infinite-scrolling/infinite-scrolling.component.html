@@ -10,4 +10,20 @@
       </mat-card-content>
     </mat-card>
   </cdk-virtual-scroll-viewport>
+  <br>
+  <h1>Infinite Horizontal Scrolling Example</h1>
+  <div class="cdk-virtual-scroll-data-source-example">
+    <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="10" class="example-viewport">
+      <mat-card *cdkVirtualFor="let item of items" class="animate__animated animate__fadeInDown"
+                style="width: 100px; height: 100%;">
+        <mat-card-header>
+          <mat-card-title>Data</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          {{item}}
+        </mat-card-content>
+      </mat-card>
+    </cdk-virtual-scroll-viewport>
+  </div>
 </div>
+

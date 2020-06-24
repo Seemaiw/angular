@@ -21,3 +21,13 @@ mat-card{
   background-color: darkgreen;
   color: white;
 }
+
+.cdk-virtual-scroll-data-source-example .example-viewport {
+  height: 200px;
+  width: 50%;
+}
+
+.cdk-virtual-scroll-data-source-example .example-viewport .cdk-virtual-scroll-content-wrapper {
+  display: flex;
+  flex-direction: row;
+}
